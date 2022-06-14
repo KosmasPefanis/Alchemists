@@ -2,11 +2,15 @@ body {
     padding:0;
     margin:0;
     background-color: #FCF8E8;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #DF78;
+}
+h2{
+    margin:0;
 }
 header{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width:100%;
-    background-color: #ECB390;
+    background-color: #0f0e0e;
     height:60px;
     position:fixed;
     display:flex;
@@ -23,7 +27,7 @@ header{
 header:hover{
     background-color:#DF7861;
     color:black;
-    transition: background-color 2s, color 2s;
+    transition: background-color 0.5s, color 0.5s;
 }
 nav{
     margin:0px 20px 10px 0px;
@@ -51,11 +55,75 @@ nav a {
 }
 nav a:hover{
     color:rgb(37, 37, 42);
-    transition: color 2s;
+    transition: color 0.5s;
 }
+/* @media only screen and (max-width: 300px) {
+    #sign-up-section {
+      height: 20rem;
+    }
+  
+    #sign-up-cta h1 {
+      font-size: 2.25rem;
+    }
+  
+    #sign-up-cta h2 {
+      font-size: 2rem;
+    }
+  } */
+  
 .mainSection{
-    margin-top: 60px;
+    background-image: url("../Img/ChemistryFlasks.png");
+    margin-top:60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:35em;
+    display:grid;
+    grid-template-columns:repeat(12 , 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  
 }
-.background{
+.content{
+    grid-column: 2 / span 4; 
+    grid-row: 3 / span 1;
+    border-left: 2px double white;
+    border-radius: 5px;
+    background-color: #413f3f;
+    color:rgb(164, 164, 172);
+    opacity:0.9;
+    width:fit-content;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+.content a{
+    color:white;
+    text-decoration: none;
+}
+.content:hover{
+    background-color: #DF7861;
+    opacity:1;
+    padding-right:10px;
+    margin-top:10px;
+    transition: background-color 0.5s;
+}
+.content a:hover{
+    color:#0f0e0e;
+    transition: color 0.5s;
+}
+.divider{
+    height:2em;
+    background-color: #0f0e0e;
     width:100%;
+    margin:0;
+}
+#whoWeAre{
+    color:rgb(37, 37, 42);
+    margin:0 1em 0 1em;
+    background-color:#a7a7a7;
+    padding: 2em 1em;
+}
+#whoWeAre h1{
 }
