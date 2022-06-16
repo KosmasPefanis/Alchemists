@@ -1,3 +1,4 @@
+
 body {
     padding:0;
     margin:0;
@@ -11,11 +12,11 @@ h2{
 }
 header{
     width:100%;
-    background-color: #0f0e0e;
+    background-color:#53BF9D;
     height:60px;
     position:fixed;
     display:flex;
-    color:white;
+    color:rgb(56, 56, 56);
     z-index: 2;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +27,7 @@ header{
 }
 
 header:hover{
-    background-color:#DF7861;
+    background-color:#BD4291;
     color:black;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -49,26 +50,14 @@ nav ul li+li::before{
     content:"|";
 }
 nav a {
-    color:white;
+    color:rgb(56, 56, 56);
     text-decoration: none;
 }
 nav a:hover{
-    color:rgb(37, 37, 42);
+    color:black;
     transition: color 0.5s;
 }
-/* @media only screen and (max-width: 300px) {
-    #sign-up-section {
-      height: 20rem;
-    }
-  
-    #sign-up-cta h1 {
-      font-size: 2.25rem;
-    }
-  
-    #sign-up-cta h2 {
-      font-size: 2rem;
-    }
-  } */
+
   
 .mainSection{
     background-image: url("../Img/ChemistryFlasks.png");
@@ -87,8 +76,8 @@ nav a:hover{
     grid-row: 3 / span 1;
     border-left: 2px double white;
     border-radius: 5px;
-    background-color: #413f3f;
-    color:rgb(164, 164, 172);
+    background-color: #FFC54D;
+    color:rgb(56,56,56);
     opacity:0.9;
     width:fit-content;
     padding:20px;
@@ -98,29 +87,29 @@ nav a:hover{
     justify-content: space-between;
 }
 .content a{
-    color:white;
+    color:rgb(56,56,56);
     text-decoration: none;
 }
 .content:hover{
-    background-color: #DF7861;
+    background-color: #BD4291;
     opacity:1;
     padding-right:10px;
     margin-top:10px;
     transition: background-color 0.5s;
 }
 .content a:hover{
-    color:#0f0e0e;
+    color:black;
     transition: color 0.5s;
 }
 .divider{
     height:2em;
-    background-color: #0f0e0e;
+    background-color:#53BF9D;
     width:100%;
     margin:0;
 }
 #whoWeAre{
-    color:rgb(37, 37, 42);
-    background-color:#a7a7a7;
+    color:rgb(56, 56, 56);
+    background-color:#FFC54D;
     display:flex;
     flex-direction:row;
     text-align:center;
@@ -139,22 +128,22 @@ width:100%;
 }
 #actions{
     text-align:center;
-    color:#a7a7a7;
-    background-color:rgb(37, 37, 42);
+    color:rgb(56,56,56);
+    background-color:#BD4291;
     display:flex;
     flex-direction:row;
 }
 #help{
-    color:rgb(37, 37, 42);
-    background-color:#a7a7a7;
+    color:rgb(56, 56, 56);
+    background-color:#FFC54D;
     display:flex;
     flex-direction:row;
     text-align:center;
 }
 
 #contact{
-    background-color:#0f0e0e;
-    color: rgb(253, 200, 178);
+    background-color:#53BF9D;
+    color: rgb(56, 56, 56);
     width:100%;
 }
 
@@ -174,24 +163,24 @@ width:100%;
 }
 .buttonTop {
     grid-column: 12; 
-    border: solid rgb(253, 200, 178);
+    border: solid #FFC54D;
     border-radius: 3px;
-    background-color:rgb(253, 200, 178);
+    background-color:#FFC54D;
     color:black;
     width:fit-content;
 }
 .buttonTop:hover{
-    background-color:#DF7861;
-    margin-right:10px;
-    margin-top:10px;
-    border: solid #DF7861;
+    background-color:#BD4291;
+    margin-right:3px;
+    margin-top:3px;
+    border: solid #BD4291;
     transition: background-color 0.5s,border 0.5s;
 }
 #buttonTop{
-    background-color:rgb(253, 200, 178); 
+    background-color:#FFC54D; 
     border-width:0px; 
 }
 #buttonTop:hover {
-    background-color:#DF7861;
+    background-color:#BD4291;
     transition: background-color 0.5s;
 }
