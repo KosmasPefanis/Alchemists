@@ -181,3 +181,11 @@ width:100%;
     border: solid #DF7861;
     transition: background-color 0.5s,border 0.5s;
 }
+#buttonTop{
+    background-color:rgb(253, 200, 178); 
+    border-width:0px; 
+}
+#buttonTop:hover {
+    background-color:#DF7861;
+    transition: background-color 0.5s;
+}
