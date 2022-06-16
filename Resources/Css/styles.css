@@ -4,6 +4,7 @@ body {
     background-color: #FCF8E8;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #DF78;
+    width:100%;
 }
 h2{
     margin:0;
@@ -31,10 +32,8 @@ header:hover{
 }
 nav{
     margin:0px 20px 10px 0px;
-    
 }
 nav ul{
-
     display:flex;
     flex-direction: row;
     list-style: none;
@@ -42,8 +41,8 @@ nav ul{
 
 nav ul li{
     font-size: 1.5em;
-    padding-right:10px;
-
+    margin-right:0.5em;
+    margin-right:0.5em;
 }
 
 nav ul li+li::before{
@@ -156,18 +155,25 @@ width:100%;
 #contact{
     background-color:#0f0e0e;
     color: rgb(253, 200, 178);
-    padding: 2em;
+    width:100%;
+}
+
+#contact h2 {
+    margin-left:2em;
 }
 
 .contactCards{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
-
+.buttonGrid{
+    display:grid;
+    grid-template-columns:repeat(12 , 1fr);
+}
 .buttonTop {
-    position:relative;
-    left:90%;
+    grid-column: 12; 
     border: solid rgb(253, 200, 178);
     border-radius: 3px;
     background-color:rgb(253, 200, 178);
