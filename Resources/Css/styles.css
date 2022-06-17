@@ -181,31 +181,22 @@ width:100%;
     flex-wrap:wrap;
 }
 /* Button to the top */
-.buttonGrid{
-    display:grid;
-    grid-template-columns:repeat(12 , 1fr);
+.buttonTop{
+    display:float;
+    float:right;
+    margin-right:1em;
 }
-.buttonTop {
-    grid-column: 12; 
-    border: solid #FFC54D;
-    border-radius: 3px;
-    background-color:#FFC54D;
-    color:black;
-    width:fit-content;
+.buttonTop a{
+    border-radius: 5px;
+    color:white;
+    font-size:1em;
+    padding:0.5em 0.25em;
+    border-radius:5px;
+    background-color:rgb(56,56,56);
+    text-decoration: none;
 }
-.buttonTop:hover{
-    background-color:#BD4291;
-    margin-right:3px;
-    margin-top:3px;
-    border: solid #BD4291;
-    transition: background-color 0.5s,border 0.5s;
-}
-#buttonTop{
-    background-color:#FFC54D; 
-    border-width:0px; 
-}
-#buttonTop:hover {
-    background-color:#BD4291;
+.buttonTop a:hover {
+    background-color:#20472f;
     transition: background-color 0.5s;
 }
 /* Burger dropdown */
