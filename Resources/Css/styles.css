@@ -27,10 +27,10 @@ header{
 }
 
 header:hover{
-    background-color:#BD4291;
     color:black;
-    transition: background-color 0.5s, color 0.5s;
+    transition: color 0.5s;
 }
+/* Nav bar */
 nav{
     margin:0px 20px 10px 0px;
 }
@@ -57,8 +57,16 @@ nav a:hover{
     color:black;
     transition: color 0.5s;
 }
+.p-menu1{
+    z-index:3;
+}
+@media (min-width: 880px) {
+    .p-menu1{
+    display:none;
+    }
+}
 
-  
+/* background with intro */
 .mainSection{
     background-image: url("../Img/ChemistryFlasks.png");
     margin-top:60px;
@@ -107,9 +115,10 @@ nav a:hover{
     width:100%;
     margin:0;
 }
+/* main content */
 #whoWeAre{
     color:rgb(56, 56, 56);
-    background-color:#FFC54D;
+    background-color:#FFC54D ;
     display:flex;
     flex-direction:row;
     text-align:center;
@@ -157,6 +166,7 @@ width:100%;
     justify-content: space-around;
     flex-wrap:wrap;
 }
+/* Button to the top */
 .buttonGrid{
     display:grid;
     grid-template-columns:repeat(12 , 1fr);
@@ -183,4 +193,125 @@ width:100%;
 #buttonTop:hover {
     background-color:#BD4291;
     transition: background-color 0.5s;
+}
+/* Burger dropdown */
+
+.menu1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .p-menu1{
+     height: 100%;
+  }
+  
+  
+  
+  
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    margin: 10px 5px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: right;
+    z-index: 120;
+  }
+  
+  .hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 340px;
+  }
+  
+  
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: #53BF9D;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity:0.8;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+  
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+/* Media queries */
+@media (max-width: 880px) {
+    nav ul {
+        display:none;
+    }
+    nav {
+      margin-right:0;  
+    }
+    .contactCards{
+        flex-direction: column;
+        margin-left:4em;
+    }
+    .buttonTop {
+        grid-column: 10 / span 2; 
+    }
 }
