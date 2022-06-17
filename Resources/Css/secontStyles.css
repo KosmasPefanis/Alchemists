@@ -42,7 +42,6 @@ nav ul{
 nav ul li{
     font-size: 1.5em;
     margin-right:0.5em;
-    margin-right:0.5em;
 }
 
 nav ul li+li::before{
@@ -53,8 +52,12 @@ nav a {
     text-decoration: none;
 }
 nav a:hover{
-    color:black;
+    color:white;
     transition: color 0.5s;
+}
+
+.contentCards{
+    margin-top:60px;
 }
 .p-menu1{
     z-index:3;
